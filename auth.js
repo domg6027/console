@@ -1,9 +1,16 @@
+<!-- auth.js -->
+<script>
 /*
   ============================
   DOTS6027 PRIVATE CONSOLE AUTH
   ============================
 */
 
+/* ---- Google OAuth Client ID (PUBLIC, INTENTIONAL) ---- */
+const GOOGLE_CLIENT_ID =
+  "364562868570-c6aepmq35baauehtalrt1bvujv4nm6c8.apps.googleusercontent.com";
+
+/* ---- Allowed admin emails ---- */
 const ALLOWED_EMAILS = [
   "lastwarners2024@gmail.com"
   // "bessingerbackup2024@gmail.com" // intentionally disabled
@@ -64,7 +71,7 @@ function initAuth() {
   }
 
   google.accounts.id.initialize({
-    client_id: GOOGLE_CLIENT_ID,   // injected via HTML, not hardcoded
+    client_id: GOOGLE_CLIENT_ID,
     callback: handleCredentialResponse,
     auto_select: true
   });
@@ -84,3 +91,4 @@ document.documentElement.style.display = "none";
 
 /* ---- Load when ready ---- */
 window.addEventListener("load", initAuth);
+</script>
