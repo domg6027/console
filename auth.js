@@ -71,7 +71,7 @@ function initAuth() {
   }
 
   google.accounts.id.initialize({
-    client_id: "GOOGLE_CLIENT_ID",
+    client_id: "364562868570-c6aepmq35baauehtalrt1bvujv4nm6c8.apps.googleusercontent.com",
     callback: handleCredentialResponse,
     auto_select: true
   });
