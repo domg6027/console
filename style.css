@@ -1,0 +1,169 @@
+/* ================================
+   DOTS6027 PRIVATE CONSOLE STYLE
+   Retro Console / Admin Terminal
+   ================================ */
+
+/* ---- Base reset ---- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---- Page body ---- */
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  color: #33ff66; /* classic terminal green */
+  font-family: "Courier New", Consolas, monospace;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* ---- Main container ---- */
+.console {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 24px;
+  border: 1px solid #1f7a3f;
+  background: #020402;
+}
+
+/* ---- Headings ---- */
+h1, h2, h3 {
+  color: #66ff99;
+  margin-bottom: 12px;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 22px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+/* ---- Paragraphs & text ---- */
+p {
+  margin-bottom: 14px;
+}
+
+/* ---- Lists ---- */
+ul {
+  margin-left: 20px;
+  margin-bottom: 14px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+/* ---- Tables ---- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+}
+
+th, td {
+  border: 1px solid #1f7a3f;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+th {
+  color: #66ff99;
+  background: #021a0c;
+}
+
+/* ---- Inputs ---- */
+input, select, textarea {
+  background: #000000;
+  color: #33ff66;
+  border: 1px solid #1f7a3f;
+  padding: 6px 8px;
+  font-family: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #66ff99;
+}
+
+/* ---- Buttons ---- */
+button {
+  background: #021a0c;
+  color: #66ff99;
+  border: 1px solid #1f7a3f;
+  padding: 6px 14px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #032b14;
+}
+
+/* ---- Links (BLUE, UNDERLINED, NO ANIMATION) ---- */
+a {
+  color: #4da6ff;
+  text-decoration: underline;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #4da6ff;
+  text-decoration: underline;
+}
+
+/* ---- Horizontal rule ---- */
+hr {
+  border: none;
+  border-top: 1px solid #1f7a3f;
+  margin: 20px 0;
+}
+
+/* ---- Status messages ---- */
+.notice {
+  color: #66ff99;
+}
+
+.warning {
+  color: #ffcc66;
+}
+
+.error {
+  color: #ff6666;
+}
+
+/* ---- Footer / small text ---- */
+.small {
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+/* ---- Scrollbar (subtle) ---- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f7a3f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2fa65c;
+}
